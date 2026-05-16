@@ -1,4 +1,4 @@
-# Predictive Maintenance Lite - Cleaned Version
+# Predictive Maintenance Lite
 
 This project has been cleaned and simplified according to your requirements. The backend remains unchanged, and the frontend has been updated with better user experience and simpler React code.
 
@@ -6,34 +6,15 @@ This project has been cleaned and simplified according to your requirements. The
 
 ```
 pml-project/
-├── backend/                    # Spring Boot backend (unchanged)
+├── backend/                    # Spring Boot backend
 │   └── PredictiveMaintenanceLite/
-└── frontend/                   # React frontend (cleaned & improved)
+└── frontend/                   # React frontend 
     └── src/
         ├── api/                # API client functions
         ├── components/         # Reusable UI components
         ├── pages/              # Main application pages
         └── utils/              # Helper functions
 ```
-
-## ✨ Key Changes Made
-
-### 1. **Removed Features**
-- ❌ Removed "Add New Threshold" button from Thresholds page
-- ❌ Removed "Add Asset" button from violations view in Assets page
-- ❌ Removed unnecessary sno (serial number) fields from everywhere
-- ❌ Cleaned up unused code and imports
-
-### 2. **Added Features**
-- ✅ **Search by Asset Name** - You can now search for assets by typing their name in the Assets page
-- ✅ **Inactive Asset Protection** - Cannot add sensors to inactive assets (shows a helpful warning message)
-- ✅ **Inactive Asset Blocking in Simulator** - The simulator only shows active sensors from active assets
-
-### 3. **Code Improvements**
-- 📝 Added friendly, human-written comments throughout the code
-- 🎯 Simplified React patterns for beginners
-- 🧹 Removed unused imports and code
-- 💬 Clear explanations at the top of each page file
 
 ## 🚀 How to Run
 
@@ -136,19 +117,6 @@ assetsApi.getAll('')      // Returns all assets
 - API calls are separated into `src/api/` files for easy understanding
 - UI components are in `src/components/ui/` and can be reused
 
-## 🐛 Common Questions
-
-**Q: Why can't I create thresholds manually?**  
-A: Thresholds are created automatically when you add a new asset. This ensures every asset has proper safety limits from the start.
-
-**Q: Why can't I add sensors to some assets?**  
-A: The asset might be inactive. Activate it first, then add sensors.
-
-**Q: How do I search for assets?**  
-A: Use the search box in the Assets page header - just start typing the asset name.
-
-**Q: Where did the "Add Asset" button go in violations view?**  
-A: It's hidden when viewing violations to keep the focus on existing problematic assets.
 
 ## 🔄 Next Steps
 
