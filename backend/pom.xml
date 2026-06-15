@@ -11,7 +11,7 @@
         <relativePath/>
     </parent>
 
-    <groupId>com.cognizant</groupId>
+    <groupId>com</groupId>
     <artifactId>PredictiveMaintenanceLite</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>PredictiveMaintenanceLite</name>
@@ -94,6 +94,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
+                    <mainClass>com.PredictiveMaintenanceLite.PredictiveMaintenanceLiteApplication</mainClass>
                     <excludes>
                         <exclude>
                             <groupId>org.projectlombok</groupId>
